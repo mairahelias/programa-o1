@@ -4,6 +4,8 @@
 
 package ifc.mairahelias;
 
+import java.util.Date;
+
 /**
  *
  * @author aluno
@@ -11,6 +13,16 @@ package ifc.mairahelias;
 public class Mairahelias {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Estudante mairah = new Estudante();
+        Estudante vinicius = new Estudante();
+        Estudante anthony = new Estudante();
+        
+        mairah.setNome("mairah");
+        vinicius.setNome("vinicius");
+        anthony.setNome("anthony");
+                
+        System.out.println(mairah.getNome());
+        System.out.println(vinicius.getNome());
+        System.out.println(anthony.getNome());
     }
 }
