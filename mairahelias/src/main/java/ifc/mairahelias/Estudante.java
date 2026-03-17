@@ -12,6 +12,10 @@ public class Estudante {
     char genero;
     private String matricula;
     private String email;
+    private int telefone;
+    private int anoIngresso;
+    private int semestre;
+    private String situacaoAcademica;
     
     public Estudante () {
         this.nome = "Nodody";
@@ -21,6 +25,13 @@ public class Estudante {
         int idade = 0;
         // Lógica para calcular idade
         return idade;
+    }
+    public String obterMatricula(String anoIngresso ) {
+        String matricula = ;
+        
+        return matricula;
+        
+
     }
     public String getNome (){
         return this.nome;
@@ -32,7 +43,7 @@ public class Estudante {
         return this.cpf;
     }
     public void setCPF(String set_CPF){
-        this.cpf;
+        this.cpf = set_CPF;
     }
     public char getGenero (){
         return this.genero;
@@ -52,6 +63,23 @@ public class Estudante {
      public void setEmail (String set_email){
          this.email = set_email;
      }
-    
+     public int getTelefone (){
+        return this.telefone;
+    }
+     public void setTelefone (int set_telefone){
+         this.telefone = set_telefone; 
+    }
+      public int getSemestre (){
+        return this.semestre;
+    }
+     public void setSemestre (int set_semestre){
+         this.semestre = set_semestre; 
+    }
+     public String getSituacaoAcademica (){
+        return this.situacaoAcademica;
+    }
+      public void setSituacaoAcademica (String set_situacaoAcademica){
+         this.situacaoAcademica = set_situacaoAcademica; 
+    }
 }
 
