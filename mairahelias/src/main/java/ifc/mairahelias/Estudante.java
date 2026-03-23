@@ -1,8 +1,6 @@
-
 package ifc.mairahelias;
 
 import java.util.Date;
-
 
 public class Estudante {
 
@@ -10,14 +8,14 @@ public class Estudante {
     private Date dataNascimento;
     private String cpf;
     char genero;
-    private String matricula;
     private String email;
-    private int telefone;
     private int anoIngresso;
-    private int semestre;
+    private int telefone;
     private String situacaoAcademica;
-    
-    public Estudante () {
+    private int semestre;
+    private int codigo;
+
+    public Estudante() {
         this.nome = "Nodody";
     }
 
@@ -26,60 +24,76 @@ public class Estudante {
         // Lógica para calcular idade
         return idade;
     }
-    public String obterMatricula(String anoIngresso ) {
-        String matricula = ;
-        
-        return matricula;
-        
 
-    }
-    public String getNome (){
+    public String getNome() {
         return this.nome;
     }
-    public void setNome(String set_nome){
-        this.nome = set_nome;
+
+    public void setNome(String _nome) {
+        this.nome = _nome;
     }
-    public String getCPF (){
+
+    public String getCPF() {
         return this.cpf;
     }
-    public void setCPF(String set_CPF){
-        this.cpf = set_CPF;
+
+    public void setCPF(String _CPF) {
+        this.cpf = _CPF;
     }
-    public char getGenero (){
+
+    public char getGenero() {
         return this.genero;
     }
-    public void setGenero (char set_genero){
-        this.genero = set_genero;
+
+    public void setGenero(char _genero) {
+        this.genero = _genero;
     }
-    public String getMatricula(){
-        return this.matricula;
+
+    public String getCodigo() {
+        String matricula;
+        return matricula = String.valueOf(anoIngresso) + String.valueOf(semestre) + codigo;
     }
-    public void setMatricula (String set_matricula){
-        this.matricula = set_matricula;
+
+    public void setMatricula(int _matricula) {
+        
+        this.codigo = _matricula;
     }
-    public String getEmail (){
+
+    public String getEmail() {
         return this.email;
     }
-     public void setEmail (String set_email){
-         this.email = set_email;
-     }
-     public int getTelefone (){
+
+    public void setEmail(String _email) {
+        this.email = _email;
+    }
+
+    public int getAnoIngresso() {
+          return this.anoIngresso;
+    }
+    public void setAnoIngresso(int _anoIngresso) {
+        this.anoIngresso = _anoIngresso;
+    }
+    public int getTelefone() {
         return this.telefone;
     }
-     public void setTelefone (int set_telefone){
-         this.telefone = set_telefone; 
+
+    public void setTelefone(int _telefone) {
+        this.telefone = _telefone;
     }
-      public int getSemestre (){
+
+    public int getSemestre() {
         return this.semestre;
     }
-     public void setSemestre (int set_semestre){
-         this.semestre = set_semestre; 
+
+    public void setSemestre(int _semestre) {
+        this.semestre = _semestre;
     }
-     public String getSituacaoAcademica (){
+
+    public String getSituacaoAcademica() {
         return this.situacaoAcademica;
     }
-      public void setSituacaoAcademica (String set_situacaoAcademica){
-         this.situacaoAcademica = set_situacaoAcademica; 
+
+    public void setSituacaoAcademica(String _situacaoAcademica) {
+        this.situacaoAcademica = _situacaoAcademica;
     }
 }
-
