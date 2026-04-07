@@ -10,10 +10,36 @@ public class Disciplina {
     private String objetivosAprend;
     private int numSiape;
     
-     public int getNumSiape() {
-          return this.numSiape;
+     public int getCodDisc() {
+          return this.codDisc;
     }
-    public void setNumSiape(int _numSiape) {
-        this.numSiape = _numSiape;
+    public void setCodDisc(int _codDisc) {
+        this.numSiape = _codDisc;
     }
+    public String getNomeDisc() {
+          return this.nomeDisc;
+    }
+    public void setNomeDisc(String _nomeDisc) {
+        this.nomeDisc = _nomeDisc;
+    }
+    public int getCodDisc() {
+          return this.codDisc;
+    }
+    public void setCodDisc(int _codDisc) {
+        this.numSiape = _codDisc;
+    }
+public int getCodDisc() {
+          return this.codDisc;
+    }
+    public void setCodDisc(int _codDisc) {
+        this.numSiape = _codDisc;
+    }
+public int getCodDisc() {
+          return this.codDisc;
+    }
+    public void setCodDisc(int _codDisc) {
+        this.numSiape = _codDisc;
+    }
+
+    
 }
